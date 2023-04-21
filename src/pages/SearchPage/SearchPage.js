@@ -22,7 +22,7 @@ const SearchPage = () => {
   useEffect(() => {
     dispatch(clearSearch());
     dispatch(fetchAsyncSearchProduct(searchTerm));
-  }, [searchTerm]);
+  }, [searchTerm, dispatch]);
 
   if (searchProducts.length === 0) {
     return (
