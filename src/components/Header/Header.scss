@@ -1,0 +1,30 @@
+@import '../../App.scss';
+
+.header {
+  background: rgb(25, 64, 221);
+  // background: linear-gradient(180deg, rgb(12, 93, 128) 0%, rgb(7, 106, 148) 100%);
+  // background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+
+  .header-cnt-top {
+    border-bottom: 1px solid lighten($clr-orange, 10%);
+    // .header-cnt-top-l {
+    //   ul {
+    //     li {
+    //       a:hover {
+    //         color: #fac126;
+    //         transition: all 0.2s ease-in-out;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+
+  @media screen and (max-width: 992px) {
+    .header-cnt-top {
+      flex-direction: column;
+      .header-cnt-top-l {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
